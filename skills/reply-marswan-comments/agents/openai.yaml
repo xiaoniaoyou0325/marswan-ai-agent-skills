@@ -1,0 +1,4 @@
+interface:
+  display_name: "火星来信评论回复"
+  short_description: "为火星来信公众号生成简短、贴题、有活人感的评论回复"
+  default_prompt: "Use $reply-marswan-comments to reply to this WeChat article comment."

@@ -47,6 +47,7 @@ review-animations
 | `blog-writer-cn` | 按中文技术博客的方法组织结构、案例和表达         | 技术教程、开发总结、项目复盘和知识分享 |
 | `renwei-writing` | 润色中文内容，同时保留作者原本的语气和真实感     | 工作邮件、说明文档、个人文章和内容改写 |
 | `khazix-writer`  | 用更有故事感、节奏感和卡兹克个人视角方式创作长文 | 工具分享、产品体验、方法论和公众号文章 |
+| [`reply-marswan-comments`](skills/reply-marswan-comments) | 为「火星来信 Marswan」生成简短、贴题、有活人感的评论回复 | 公众号评论互动、读者提问、质疑和玩梗 |
 
 ### 如何选择
 
@@ -55,6 +56,8 @@ review-animations
 - 已经有初稿，希望文字更自然，使用 `renwei-writing`。
 
 - 希望把工具或经历写成有叙事感的长文，使用 `khazix-writer`。
+
+- 需要回复「火星来信 Marswan」公众号评论，使用 `reply-marswan-comments`。
 
 ## 任务分析与工作流
 
