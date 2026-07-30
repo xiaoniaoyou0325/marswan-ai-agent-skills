@@ -17,6 +17,7 @@ Skill 并不属于某一个特定的 Agent。它更像是一份可以复用的�
 | `animation-vocabulary` | 把模糊的动效描述转换成可实现的动画术语和参数           | 不确定某种动画应该如何描述或实现时           |
 | `review-animations`    | 检查动画节奏、性能、可访问性和体验问题                 | 动效完成后的代码评审与体验验收               |
 | `karpathy-guidelines`  | 控制代码改动范围，减少过度设计、无效抽象和不必要复杂度 | 功能开发、代码修改、重构和问题修复           |
+| [`ui-ux-pro-max`](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 提供可检索的 UI/UX 设计知识库并生成完整设计系统 | 页面设计、风格选型、配色、字体、图表和多技术栈实现 |
 
 ### 推荐组合
 
@@ -105,6 +106,12 @@ Codex 用户也可以使用自己的 Skill 目录。
 
 ```text
 ~/.codex/skills/<skill-name>/SKILL.md
+```
+
+`ui-ux-pro-max` 上游提供 Codex 专用安装器，会将核心 Skill 和配套设计 Skill 安装到 `~/.agents/skills/`：
+
+```bash
+npx ui-ux-pro-max-cli init --ai codex --global
 ```
 
 这两个路径只是接入示例，不是 Skill 的平台限制。迁移到其他 Agent 时，按照对应产品的加载规则调整目录或导入方式即可。
