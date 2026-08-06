@@ -47,6 +47,7 @@ review-animations
 | `blog-writer-cn` | 按中文技术博客的方法组织结构、案例和表达         | 技术教程、开发总结、项目复盘和知识分享 |
 | `renwei-writing` | 润色中文内容，同时保留作者原本的语气和真实感     | 工作邮件、说明文档、个人文章和内容改写 |
 | `khazix-writer`  | 用更有故事感、节奏感和卡兹克个人视角方式创作长文 | 工具分享、产品体验、方法论和公众号文章 |
+| `human-writing`   | 基于材料和事实边界进行自然中文创作与改稿         | 知乎长答、公众号、博客、人物故事、行业解读和教程 |
 | [`reply-marswan-comments`](skills/reply-marswan-comments) | 为「火星来信 Marswan」生成简短、贴题、有活人感的评论回复 | 公众号评论互动、读者提问、质疑和玩梗 |
 
 ### 如何选择
@@ -56,6 +57,8 @@ review-animations
 - 已经有初稿，希望文字更自然，使用 `renwei-writing`。
 
 - 希望把工具或经历写成有叙事感的长文，使用 `khazix-writer`。
+
+- 需要跨文体创作或改稿，并优先保证材料、事实边界和自然中文，使用 `human-writing`。
 
 - 需要回复「火星来信 Marswan」公众号评论，使用 `reply-marswan-comments`。
 
@@ -81,6 +84,12 @@ neat-freak
 ```
 
 `leader` 负责把目标拆清楚，中间使用与任务相关的专业 Skill，开发过程中通过 `karpathy-guidelines` 控制复杂度，结束后再用 `neat-freak` 完成整理和收尾。
+
+## 代码安全
+
+| Skill / 工具 | 作用 | 适用场景 |
+| ------------ | ---- | -------- |
+| [`codex-security-*`](https://github.com/openai/codex-security) | OpenAI Codex Security 提供的 11 个命令型 Skill 与安全扫描 CLI | 代码库安全扫描、发现管理、补丁生成、验证和结果导出 |
 
 ## 信息与系统工具
 
@@ -115,6 +124,13 @@ Codex 用户也可以使用自己的 Skill 目录。
 
 ```bash
 npx ui-ux-pro-max-cli init --ai codex --global
+```
+
+Codex Security 需要先安装官方 CLI，再把 11 个命令型 Skill 同步到 `~/.agents/skills/`：
+
+```bash
+npm install -g @openai/codex-security
+codex-security skills add
 ```
 
 这两个路径只是接入示例，不是 Skill 的平台限制。迁移到其他 Agent 时，按照对应产品的加载规则调整目录或导入方式即可。
